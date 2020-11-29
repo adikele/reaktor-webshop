@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+    <br> 
+    <h3> List of jackets: </h3>
+    <br>
+    
+    <p >    
+        {% for key, value in main_info.items() %}
+        <li> {{ key }} </li>
+        <li> {{ value }} </li>
+        <br>
+        {% endfor %}
+    </p>
+    
+{% endblock %}
